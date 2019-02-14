@@ -40,7 +40,7 @@ class App < Sinatra::Base
 
   # "#{params[:word1]} " + "#{params[:word2]} " + "#{params[:word3]} " + "#{params[:word4]} " + "#{params[:word5]}." doesnt work kms
 
-    @word1 = params[:word].to_s
+    @word1 = params[:word1].to_s
     @word2 = params[:word2].to_s
     @word3 = params[:word3].to_s
     @word4 = params[:word4].to_s
