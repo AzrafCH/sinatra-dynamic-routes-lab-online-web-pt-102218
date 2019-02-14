@@ -40,12 +40,12 @@ class App < Sinatra::Base
 
   # "#{params[:word1]} " + "#{params[:word2]} " + "#{params[:word3]} " + "#{params[:word4]} " + "#{params[:word5]}." doesnt work kms
 
-  #  @word1 = params[:word]
-  #  @word2 = params[:word2]
-  #  @word3 = params[:word3]
-  #  @word4 = params[:word4]
-  #  @word5 = params[:word5]
-  #  "#{@word} #{@word2} #{@word3} #{@word4} #{@word5}." also doesnt work
+    @word1 = params[:word].to_s
+    @word2 = params[:word2].to_s
+    @word3 = params[:word3].to_s
+    @word4 = params[:word4].to_s 
+    @word5 = params[:word5].to_s 
+    "#{@word} #{@word2} #{@word3} #{@word4} #{@word5}."
   end
 
   get '/:operation/:number1/:number2' do
