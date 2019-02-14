@@ -43,8 +43,8 @@ class App < Sinatra::Base
     @word1 = params[:word].to_s
     @word2 = params[:word2].to_s
     @word3 = params[:word3].to_s
-    @word4 = params[:word4].to_s 
-    @word5 = params[:word5].to_s 
+    @word4 = params[:word4].to_s
+    @word5 = params[:word5].to_s
     "#{@word} #{@word2} #{@word3} #{@word4} #{@word5}."
   end
 
