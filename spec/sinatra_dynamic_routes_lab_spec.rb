@@ -62,26 +62,26 @@ describe App do
     end
   end
 
-  #describe 'GET /say/:word1/:word2/:word3/:word4/:word5' do
-  #  it 'sends a 200 status code' do
-  #    get '/say/stop/rhyming/I/mean/it'
+  describe 'GET /say/:word1/:word2/:word3/:word4/:word5' do
+    it 'sends a 200 status code' do
+      get '/say/stop/rhyming/I/mean/it'
 
-  #    expect(last_response.status).to eq(200)
-  #  end
+      expect(last_response.status).to eq(200)
+    end
 
-  #  it 'concatenates the words and adds a period' do
-  #    get '/say/stop/rhyming/I/mean/it'
+    it 'concatenates the words and adds a period' do
+      get '/say/stop/rhyming/I/mean/it'
 
-  #    expect(last_response.body).to include('stop rhyming I mean it.')
-  #  end
+      expect(last_response.body).to include('stop rhyming I mean it.')
+    end
 
-  #  it "isn't hard-coded" do
-  #    get '/say/does/anybody/want/a/peanut'
+    it "isn't hard-coded" do
+      get '/say/does/anybody/want/a/peanut'
 
- #    expect(last_response.body).to include('does anybody want a peanut.')
-#      expect(last_response.body).to_not include('stop rhyming I mean it.')
-#    end
-#  end
+    expect(last_response.body).to include('does anybody want a peanut.')
+      expect(last_response.body).to_not include('stop rhyming I mean it.')
+    end
+  end
 
   describe 'GET /:operation/:number1/:number2' do
     it 'adds two numbers together' do
